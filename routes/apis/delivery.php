@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('order', [OrderController::class, 'index']);
-Route::post('order/{id}/accept', [OrderController::class, 'accept']);
-Route::post('order/{id}/delivering', [OrderController::class, 'delivering']);
-Route::post('order/{id}/delivered', [OrderController::class, 'delivered']);
+Route::get('orders', [OrderController::class, 'index']);
+Route::post('orders/{id}/accept', [OrderController::class, 'accept']);
+Route::post('orders/{id}/delivering', [OrderController::class, 'delivering']);
+Route::post('orders/{id}/delivered', [OrderController::class, 'delivered']);
 
